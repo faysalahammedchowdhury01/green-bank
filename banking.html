@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title and Favicon -->
+    <title>Dashboard - Bank Asia</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Area -->
+    <header>
+      <div class="max-w-screen-lg mx-auto px-5">
+        <nav class="py-5 flex justify-between items-center">
+          <!-- Logo -->
+          <a href="banking.html">
+            <img class="w-40" src="images/logo.svg" alt="Bank Asia" />
+          </a>
+          <!-- Avatar and Logout -->
+          <div class="flex items-center">
+            <img src="images/avatar.svg" alt="avatar" class="h-8 mr-3" />
+            <a href="index.html" title="Logout">
+              <img src="images/logout.svg" alt="logout" class="h-6" />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- /Header Area -->
+
+    <!-- Main Area -->
+    <main>
+      <!-- Welcome Area -->
+      <section id="welcome-area">
+        <div class="max-w-screen-lg mx-auto px-5 mt-10">
+          <h2 class="text-xl md:text-3xl font-bold">
+            <span id="greet">Good Evening</span>, Mr Faysal. How Are You?
+          </h2>
+        </div>
+      </section>
+      <!-- /Welcome Area -->
+
+      <!-- Amount Area -->
+      <section id="amount-area" class="mt-8">
+        <div class="max-w-screen-lg mx-auto px-5">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Deposit Area -->
+            <div id="deposit-area" class="bg-green-100 p-5 rounded-md">
+              <h3 class="text-xl font-bold uppercase text-gray-800">Deposit</h3>
+              <h2 class="text-4xl font-bold uppercase text-gray-800">
+                $<span id="total-deposit-amount">00.00</span>
+              </h2>
+            </div>
+            <!-- /Deposit Area -->
+            <!-- Withdraw Area -->
+            <div id="withdraw-area" class="bg-red-100 p-5 rounded-md">
+              <h3 class="text-xl font-bold uppercase text-gray-800">
+                Withdraw
+              </h3>
+              <h2 class="text-4xl font-bold uppercase text-gray-800">
+                $<span id="total-withdraw-amount">00.00</span>
+              </h2>
+            </div>
+            <!-- /Withdraw Area -->
+            <!-- Balance Area -->
+            <div id="balance-area" class="bg-blue-100 p-5 rounded-md">
+              <h3 class="text-xl font-bold uppercase text-gray-800">Balance</h3>
+              <h2 class="text-4xl font-bold uppercase text-gray-800">
+                $<span id="total-balance">00.00</span>
+              </h2>
+            </div>
+            <!-- /Balance Area -->
+          </div>
+        </div>
+      </section>
+      <!-- /Amount Area -->
+
+      <!-- Action Area -->
+      <section id="action-area" class="my-10">
+        <div class="max-w-screen-lg mx-auto px-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <!-- Deposit Form -->
+            <form
+              action=""
+              id="deposit-form"
+              class="border p-5 space-y-5 rounded-md"
+            >
+              <h3 class="text-xl font-bold uppercase text-gray-800">Deposit</h3>
+              <input
+                id="deposit-field"
+                type="number"
+                class="
+                  rounded-md
+                  block
+                  w-full
+                  border
+                  p-2
+                  focus:outline-none focus:ring-1
+                  ring-green-500 ring-opacity-60
+                "
+                placeholder="$ You want to Deposit"
+              />
+              <button
+                class="
+                  rounded-md
+                  uppercase
+                  bg-green-500
+                  text-white
+                  font-medium
+                  block
+                  w-full
+                  p-2
+                  focus:outline-none focus:ring-1
+                  ring-green-500 ring-opacity-60
+                "
+                type="submit"
+              >
+                Deposit
+              </button>
+            </form>
+            <!-- /Deposit Form -->
+            <!-- Withdraw Form -->
+            <form
+              action=""
+              id="withdraw-form"
+              class="border p-5 space-y-5 rounded-md"
+            >
+              <h3 class="text-xl font-bold uppercase text-gray-800">
+                Withdraw
+              </h3>
+              <input
+                id="withdraw-field"
+                type="number"
+                class="
+                  rounded-md
+                  block
+                  w-full
+                  border
+                  p-2
+                  focus:outline-none focus:ring-1
+                  ring-red-500 ring-opacity-60
+                "
+                placeholder="$ You want to Deposit"
+              />
+              <button
+                class="
+                  rounded-md
+                  uppercase
+                  bg-red-500
+                  text-white
+                  font-medium
+                  block
+                  w-full
+                  p-2
+                  focus:outline-none focus:ring-1
+                  ring-red-500 ring-opacity-60
+                "
+                type="submit"
+              >
+                Withdraw
+              </button>
+            </form>
+            <!-- /Deposit Form -->
+          </div>
+        </div>
+      </section>
+      <!-- /Action Area -->
+    </main>
+    <!-- /Main Area -->
+
+    <!-- JS File -->
+    <script src="js/banking.js"></script>
+  </body>
+</html>

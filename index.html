@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title and Favicon -->
+    <title>Login - Bank Asia</title>
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="min-h-screen flex justify-center items-center">
+        <!-- Login Form -->
+        <form id="login-form" class="border w-96 py-10 px-8 space-y-2">
+          <!-- Text -->
+          <a href="index.html"
+            ><img src="images/logo.svg" alt="logo" class="w-40 mx-auto mb-5"
+          /></a>
+          <!-- Email -->
+          <div>
+            <label for="email-field"
+              >Email<span class="text-red-500">*</span></label
+            >
+            <input
+              id="email-field"
+              class="
+                rounded-md
+                block
+                w-full
+                border
+                p-2
+                focus:outline-none focus:ring-1
+                ring-red-500 ring-opacity-60
+              "
+              type="email"
+              placeholder="Your Email"
+              value="user@gmail.com"
+            />
+          </div>
+          <!-- Password -->
+          <div>
+            <label for="password-field"
+              >Password<span class="text-red-500">*</span></label
+            >
+            <input
+              id="password-field"
+              class="
+                rounded-md
+                block
+                w-full
+                border
+                p-2
+                focus:outline-none focus:ring-1
+                ring-red-500 ring-opacity-50
+              "
+              type="password"
+              placeholder="Your Password"
+              value="1234"
+            />
+          </div>
+          <!-- Button -->
+          <div>
+            <button
+              id="login-btn"
+              class="
+                rounded-md
+                uppercase
+                block
+                w-full
+                font-medium
+                text-center text-white
+                bg-green-500
+                p-2
+                mt-4
+                focus:ring-1
+                ring-green-500 ring-opacity-60
+              "
+              type="submit"
+            >
+              Login
+            </button>
+          </div>
+          <!-- Forgot Password -->
+          <div class="text-center">
+            <p class="mt-5 text-blue-700">
+              <a href="banking.html">Forgot Password?</a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- JS File -->
+    <script src="js/login.js"></script>
+  </body>
+</html>
