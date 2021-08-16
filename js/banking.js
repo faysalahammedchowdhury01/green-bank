@@ -19,7 +19,7 @@ function updateBalance(amountBox, newAmount) {
   const currentBalanceText = amountBox.innerText;
   const currentBalance = parseFloat(currentBalanceText);
   const newBalance = currentBalance + newAmount;
-  amountBox.innerText = newBalance;
+  amountBox.innerText = newBalance.toFixed(2);
 }
 
 function getCurrentTotalBalance() {
@@ -36,7 +36,7 @@ function updateTotalBalance(newAmount, isAdd) {
   } else {
     newTotalBalance = currentTotalBalance - newAmount;
   }
-  totalBalanceBox.innerText = newTotalBalance;
+  totalBalanceBox.innerText = newTotalBalance.toFixed(2);
 }
 
 function handleDeposit(event) {
